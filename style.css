@@ -218,7 +218,7 @@ header{
 .timeline{
     position: relative;
     margin: 100px auto;
-    max-width: 960px;
+    max-width: 990px;
 }
 
 .container-exp{
@@ -553,8 +553,6 @@ display: block;
     background: var(--container-color);
 }
 
-
-
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -686,7 +684,7 @@ display: block;
         grid-template-columns: 1fr;
     }
     .text-box{
-        font-size: 8px;
+        font-size: 9px;
         padding: 2px 5px;
     }
     .social-footer{
@@ -716,6 +714,20 @@ display: block;
         font-weight: 400;
         font-size: 15px;
       }
+    .container-exp {
+        padding: 10px 20px;
+    }
+    .left-container-arrow,
+    .right-container-arrow{
+        display: none;
+    }
+    .isi-exp::after{
+        height: 78%;
+        top: 145px;
+    }
+    .container-exp img{
+        top: 10px;
+    }
 }
 
 #kiri{
