@@ -572,7 +572,7 @@ display: block;
         width: 90%;
     }
     .footer-menu ul li{
-        padding-right: 30px;
+        padding-right: 27px;
         display: flex;
         }
 }
@@ -733,7 +733,7 @@ display: block;
         font-size: 15px;
       }
     .container-exp {
-        padding: 10px 25px;
+        padding: 10px 30px;
     }
     .left-container-arrow,
     .right-container-arrow{
@@ -746,11 +746,12 @@ display: block;
     .container-exp img{
         top: 10px;
     }
-    .text-box ul li {
-        list-style: disc !important;
-        text-align: left;
-        margin-left: 1.5em;
+    .footer-bottom p {
+        float: unset;
     }
+    #kanan{
+        transform: translateX(25px);
+      }
 }
 
 #kiri{
@@ -767,7 +768,7 @@ display: block;
 
 #kanan{
     position: relative;
-    transform: translateX(50px);
+    transform: translateX(25px);
     opacity: 0;
     transition: all 2s ease;
   }
