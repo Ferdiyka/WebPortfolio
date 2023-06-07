@@ -455,102 +455,90 @@ header{
     transition: 0.3s all ease 0s;
 }
 
-/* FOOTER */
-footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: var(--container-color);
-    height: auto;
-    width: 100%;
-    padding-top: 10px;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.footer {
+    background-color: var(--container-color);
+    color: #fff;
+    padding: 20px;
     text-align: center;
-}
-.footer-content h2{
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 3rem;
+    font-size: 14px;
+  }
+
+.footer h2{
+    font-size: 22px;
     color: var(--main-color);
 }
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
-}
-.footer-bottom{
-    background: var(--box-color);
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-    flex-direction: column;
-}
-.footer-bottom p{
-    float: left;
-    font-size: 14px;
-    word-spacing: 4px;
-    text-transform: capitalize;
 
-}
-.footer-bottom p a{
-  color:#44bae8;
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-.footer-menu{
-  float: right;
-
-}
 .footer-menu ul{
-  display: flex;
-}
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
-}
-.footer-menu ul li a{
-  color: #cfd2d6;
-  text-decoration: none;
-  font-weight: 500;
-}
-.footer-menu ul li a:hover{
-  color: var(--main-color);
-}
-
-.social-footer{
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
-    column-gap: 0.5rem;
-    margin-left: 300px;
+  }
+
+.footer-menu ul li{
+    padding-right: 10px;
+    display: block;
+}
     
+.footer-menu ul li a{
+      color: #cfd2d6;
+      text-decoration: none;
+      font-weight: 500;
 }
 
-.social-footer .bx::hover{
-    background-color: #171b3c
-
+.footer-menu ul li a:hover{
+      color: var(--main-color);
 }
+  
 
-.social-footer .bx{
-    font-size: 1.3rem;
-    padding: 10px;
-    border-radius: 50px;
-    color: #7AD354;
-    background: var(--container-color);
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+@media (min-width: 768px) {
+    .footer {
+      font-size: 16px;
+    }
+}
+  
+
+@media (max-width: 767px) {
+    .footer {
+      font-size: 14px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .footer {
+      font-size: 12px;
+    }
+}
+  
+.social-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.social-icons a {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5px;
+    padding-top: 7px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--box-color);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 22px;
+    transition: background-color 0.3s ease;
+}
+  
+.social-icons a:hover {
+    background-color: #555;
+    color: #fff;
 }
 
 .reveal{
@@ -558,12 +546,12 @@ display: block;
     transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
-  }
+}
   
-  .reveal.active{
+.reveal.active{
     transform: translateY(0px);
     opacity: 1;
-  }
+}
 
 /* Resposive */
 @media (max-width:990px){
@@ -571,10 +559,6 @@ display: block;
         margin: 0 auto;
         width: 90%;
     }
-    .footer-menu ul li{
-        padding-right: 27px;
-        display: flex;
-        }
 }
 
 @media (max-width:892px){
@@ -589,9 +573,6 @@ display: block;
     }
     .portfolio-box{
         height: 275px;
-    }
-    .social-footer .bx{
-        margin-top: 40px;
     }
 }
 
@@ -641,9 +622,6 @@ display: block;
     .nav-link{
         display: block;
         margin: 1rem 0;
-    }
-    .social-footer .bx{
-        margin-top: 40px;
     }
 }
 
@@ -702,10 +680,7 @@ display: block;
     }
     .text-box{
         font-size: 12px;
-        padding: 2px 5px;
-    }
-    .social-footer{
-        margin-left: 20px;
+        padding: 2px 10px;
     }
     .text-box h2{
         font-weight: 500;
@@ -720,18 +695,6 @@ display: block;
         border-radius: 50%;
         right: -16px;
     }
-    .footer-content p{
-        font-size: 14px;
-        margin: 0 10px 20px;
-    }
-    .footer-content h2{
-        font-size: 16px;
-        margin: 0px 20px;
-    }
-    .footer-menu ul li a{
-        font-weight: 400;
-        font-size: 15px;
-      }
     .container-exp {
         padding: 10px 30px;
     }
@@ -740,19 +703,17 @@ display: block;
         display: none;
     }
     .isi-exp::after{
-        height: 82%;
+        height: 84%;
         top: 145px;
     }
     .container-exp img{
         top: 10px;
     }
-    .footer-bottom p {
-        float: unset;
-    }
     #kanan{
         transform: translateX(25px);
       }
 }
+
 
 #kiri{
     position: relative;
