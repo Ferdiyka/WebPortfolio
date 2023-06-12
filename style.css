@@ -746,10 +746,6 @@ header{
 
 @media (min-width: 0px) and (max-width: 450px) {
 
-    .wrapper{
-        margin: 20px;
-    }
-
   .wrapper i {
     top: 60%;
     height: 40px;
@@ -812,6 +808,7 @@ header{
     cursor: pointer;
     flex-direction: column;
     border-radius: 8px;
+    padding-top: 30px ;
   }
   .carousel .card .img {
     background: #8B53FF;
@@ -828,18 +825,18 @@ header{
   }
   .carousel .card h2 {
     font-weight: 500;
-    font-size: 1.56rem;
+    font-size: 1.36rem;
     margin: 30px 0 5px;
     color: var(--main-color);
   }
   .carousel .card span {
     color: #ffffff;
-    font-size: 1.31rem;
+    font-size: 1rem;
     text-align: center;
   }
   .carousel .card ul li{
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     list-style: disc !important;
     text-align: justify;
   }
