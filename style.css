@@ -765,10 +765,10 @@ header{
     transform: translateY(-50%) scale(0.85);
   }
   .wrapper i:first-child{
-    left: -1px;
+    left: -15px;
   }
   .wrapper i:last-child{
-    right: -1px;
+    right: -15px;
   }
   .wrapper .carousel{
     display: grid;
