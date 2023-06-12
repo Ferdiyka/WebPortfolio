@@ -311,6 +311,7 @@ header{
 }
 
 
+
 /* SERVICES */
 .services-content {
     display: flex;
@@ -483,6 +484,7 @@ header{
       color: #cfd2d6;
       text-decoration: none;
       font-weight: 500;
+      font-size: 18px;
 }
 
 .footer-menu ul li a:hover{
@@ -512,6 +514,9 @@ header{
     .footer {
       font-size: 12px;
     }
+    .footer-menu ul li a{
+        font-size: 13px;
+  }
 }
   
 .social-icons {
@@ -552,6 +557,7 @@ header{
     transform: translateY(0px);
     opacity: 1;
 }
+
 
 /* Resposive */
 @media (max-width:990px){
@@ -657,6 +663,9 @@ header{
 }
 
 @media (max-width:450px){
+    #exp{
+        display: none;
+    }
     .home{
         min-height: 485px;
         padding-top: 5rem;
@@ -709,11 +718,7 @@ header{
     .container-exp img{
         top: 10px;
     }
-    #kanan{
-        transform: translateX(25px);
-      }
 }
-
 
 #kiri{
     position: relative;
@@ -738,3 +743,119 @@ header{
     transform: translateX(0px);
     opacity: 1;
   }
+
+@media (min-width: 0px) and (max-width: 450px) {
+
+    .wrapper{
+        margin: 20px;
+    }
+
+  .wrapper i {
+    top: 60%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    background: var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -1px;
+  }
+  .wrapper i:last-child{
+    right: -1px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    grid-auto-columns: 100%;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 442px;
+    list-style: none;
+    background: var(--container-color);
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    color: var(--main-color);
+  }
+  .carousel .card span {
+    color: #ffffff;
+    font-size: 1.31rem;
+    text-align: center;
+  }
+  .carousel .card ul li{
+    color: #ffffff;
+    font-size: 1rem;
+    list-style: disc !important;
+    text-align: justify;
+  }
+
+  .carousel .card ul{
+    color: #6A6D78;
+    font-size: 1rem;
+    list-style: disc !important;
+    text-align: justify;
+    margin: 2em;
+  }
+}
+
+@media (min-width: 451px){
+    #exp1{
+        display: none;
+    } 
+}
+
